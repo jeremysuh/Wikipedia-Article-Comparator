@@ -4,6 +4,7 @@ kivy.require('1.10.1')
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout
 
+import wikipedia
 
 class GridLayout2(GridLayout):
     pass
