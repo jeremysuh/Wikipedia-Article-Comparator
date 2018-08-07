@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79f86083-4a15-4bc5-817b-6e839cd66634" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/waka.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Wikipedia-Article-Comparator.iml" afterPath="$PROJECT_DIR$/.idea/Wikipedia-Article-Comparator.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customlayout.kv" afterPath="$PROJECT_DIR$/customlayout.kv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,21 +19,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-              <folding />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customlayout.kv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="customlayout.kv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/customlayout.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,16 +59,15 @@
         <option value="$PROJECT_DIR$/layout.kv" />
         <option value="$PROJECT_DIR$/boxlayout.kv" />
         <option value="$PROJECT_DIR$/gridlayout.kv" />
-        <option value="$PROJECT_DIR$/customlayout.kv" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/customlayout.kv" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="115" />
-    <option name="y" value="66" />
-    <option name="width" value="1134" />
-    <option name="height" value="797" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -99,6 +105,14 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -111,7 +125,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in main.py">
+  <component name="RunManager" selected="Python.main">
     <configuration default="false" name="Unittests in main.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,6 +139,24 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/main.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Wikipedia-Article-Comparator" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -191,12 +223,14 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in main.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in main.py" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in main.py" />
       </list>
     </recent_temporary>
   </component>
@@ -214,45 +248,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 18h 58m 23s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 41m 45s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 18h 58m 30s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 42m 17s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 18h 59m 39s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 42m 23s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 19h 00m 14s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 42m 29s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 19h 01m 58s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 42m 44s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 19h 02m 17s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 44m 24s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 19h 02m 23s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 45m 36s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 19h 02m 39s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 45m 38s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 19h 03m 18s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 46m 04s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_main_py - 2018.08.07 at 19h 03m 34s.xml">
+    <history-entry file="Unittests_in_main_py - 2018.08.07 at 21h 48m 13s.xml">
       <configuration name="Unittests in main.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="115" y="66" width="1134" height="797" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24955909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19652778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35302198" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3180693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -274,7 +308,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -283,7 +324,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -319,18 +362,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customlayout.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customlayout.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
