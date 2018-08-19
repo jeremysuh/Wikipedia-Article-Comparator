@@ -1,0 +1,51 @@
+
+
+
+<MainLayout>:
+    cols: 2
+    spacing: 10
+    padding: 10
+
+    AsyncImage:
+        id: firstpic
+        source: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/180328_Sunmi_perfoming_at_Keimyung_University_%289%29_%28cropped%29.jpg'
+    AsyncImage:
+        source: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/180328_Sunmi_perfoming_at_Keimyung_University_%289%29_%28cropped%29.jpg'
+    TextInput:
+        text: "type here.."
+        multiline: False
+    TextInput:
+        text: "type here 2.."
+        multiline: False
+    Button:
+        text: "one"
+    Button:
+        text: "two"
+    Button:
+        text: "three"
+    Button:
+        text: "four"
+    Button:
+        text: "five"
+    Button:
+        text: "six"
+        id: sixbutton
+        on_release: root.change_text(self)
+    Button:
+        text: "seven"
+    Button:
+        text: "eight"
+    GridLayout:
+        cols: 2
+        spacing: 10
+        padding: 10
+
+        Button:
+            text: "two"
+        Button:
+            text: "three"
+
+
+
+
+
