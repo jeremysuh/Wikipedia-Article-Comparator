@@ -1,5 +1,49 @@
 
 
+<TempLayout>:
+
+    Image:
+        pos_hint:{"x":0,"y":0}
+        source: 'Minimalist-HD-Background.jpg'
+        keep_ratio: False
+        allow_stretch: True
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint: 0.4, 0.3
+        pos_hint:{"x":0.05,"y":0.65}
+
+
+        BoxLayout:
+            orientation: 'vertical'
+            AsyncImage:
+
+                keep_ratio: False
+                allow_stretch: True
+                source: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Arboretum.westonbirt.750pix.jpg'
+
+        BoxLayout:
+
+
+            orientation: 'vertical'
+
+            TextInput:
+                display_border: False
+                height: 64
+                font_size: 24
+                font_name: 'Trebuchet MS'
+                multiline: False
+                background_normal: 'white.png'
+                background_active: 'white.png'
+
+
+            BoxLayout:
+                orientation: 'horizontal'
+                Button:
+                    text: "Check"
+                Button:
+                    text: "Random"
+
 
 <MainLayout>:
     cols: 2
