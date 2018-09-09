@@ -1,33 +1,45 @@
 import kivy
 
 from kivy.app import App
+from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty, StringProperty
+from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image, AsyncImage
 from kivy.uix.textinput import TextInput
+from kivy.config import Config
+from kivy.loader import Loader
 
 import wikipedia
+
 
 
 class MainLayout(GridLayout):
 
     label_wid = ObjectProperty()
 
-    def change_text(self, num):
-        print "fire"
-        if num == 5:
-            self.ids.sixbutton.text = 'woter'
-            self.ids.firstpic.source = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wendy_Son_at_Dream_Concert_on_May_12%2C_2018.jpg/800px-Wendy_Son_at_Dream_Concert_on_May_12%2C_2018.jpg"
-        else:
-            self.ids.sixbutton.text = 'fore'
+    def change_text(self):
+        pass
 
+class TempLayout(FloatLayout):
+
+
+    def change_text(self):
+
+        self.ids.testtext.size_hint_y = 3
+        pass
 
     pass
 
 class WikipediaComparatorApp(App):
     def build(self):
 
-        return MainLayout()
+        Loader.loading_image = 'tenory.gif'
+        Loader.error_image = 'cat.png'
+        Config.set('graphics', 'width', '1024')
+        Config.set('graphics', 'height', '640')
+        Config.set('graphics', 'resizable', '0')
+        return TempLayout()
 
 
 

@@ -41,8 +41,46 @@
                 orientation: 'horizontal'
                 Button:
                     text: "Check"
+                    on_release: root.change_text()
+
                 Button:
                     text: "Random"
+
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: 0.4, 0.6
+        pos_hint:{"x":0.05,"y":0.025}
+
+        Label:
+            id: testtext
+            text: "Article Title:"
+        Label:
+            text: "Description:"
+        Label:
+            text: "Word Count:"
+        Label:
+            text: "Unique Words:"
+        Label:
+            text: "Image Count"
+        Label:
+            text: "Link Count:"
+        Label:
+            text: "Category Count:"
+        Label:
+            text: "Section Count:"
+        Label:
+            text: "Reference Count:"
+        Label:
+            text: "Supported Languages Count:"
+
+        # Most frequent words (2 graphs side by side)
+        # Commonly Shared words
+        # Potentially pie chart showing words shared and words not shared
+        # Distribution of words by length
+
+
+
+
 
 
 <MainLayout>:
