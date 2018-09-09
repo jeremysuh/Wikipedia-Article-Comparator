@@ -26,7 +26,6 @@ class TempLayout(FloatLayout):
 
     def change_text(self):
 
-        self.ids.testtext.size_hint_y = 3
         pass
 
     pass
