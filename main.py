@@ -11,6 +11,7 @@ from kivy.config import Config
 from kivy.loader import Loader
 
 import wikipedia
+import matplotlib
 
 
 
