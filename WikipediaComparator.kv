@@ -9,7 +9,6 @@
         allow_stretch: True
 
 
-
     Button:
         pos_hint:{"x":0.02,"y":0.3}
         size_hint: 0.05, 0.2
@@ -24,6 +23,7 @@
         pos_hint:{"x":0.47,"y":0.75}
         size_hint: 0.06, 0.09
         text: "o"
+
 
     BoxLayout:
         orientation: 'horizontal'
@@ -58,7 +58,7 @@
                 orientation: 'horizontal'
                 Button:
                     text: "Check"
-                    on_release: root.change_text()
+                    on_release: root.on_click_check()
 
                 Button:
                     text: "Random"
@@ -159,6 +159,15 @@
         # Potentially pie chart showing words shared and words not shared
         # Distribution of words by length
 
+    BoxLayout:
+        id: destination
+        size_hint: 0.35, 0.45
+        pos_hint:{"x":0.1,"y":0.15}
+
+    BoxLayout:
+        id: destination2
+        size_hint: 0.35, 0.45
+        pos_hint:{"x":0.55,"y":0.15}
 
 
 <MainLayout>:
