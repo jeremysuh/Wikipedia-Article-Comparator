@@ -1,28 +1,43 @@
 
+<MyWidget>:
+    canvas:
+        Rectangle:
+            pos: 50, 50
+            size: 50, 50
 
-<TempLayout>:
+
+
+<MainLayout>:
+
+
 
     Image:
         pos_hint:{"x":0,"y":0}
-        source: 'Minimalist-HD-Background.jpg'
+        source: 'background.png'
         keep_ratio: False
         allow_stretch: True
-
 
     Button:
         pos_hint:{"x":0.02,"y":0.3}
         size_hint: 0.05, 0.2
         text: "<"
+        on_release: root.on_click_arrow()
 
     Button:
         pos_hint:{"x":0.93,"y":0.3}
         size_hint: 0.05, 0.2
         text: ">"
+        on_release: root.on_click_arrow()
 
     Button:
+        id: compare_button
+        on_release: root.on_click_compare()
         pos_hint:{"x":0.47,"y":0.75}
         size_hint: 0.06, 0.09
+        disabled: True
         text: "o"
+
+
 
 
     BoxLayout:
@@ -35,9 +50,10 @@
             orientation: 'vertical'
             AsyncImage:
 
+                id: wiki_image_one
                 keep_ratio: False
                 allow_stretch: True
-                source: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Arboretum.westonbirt.750pix.jpg'
+                source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/800px-Wikipedia_Logo_1.0.png'
 
         BoxLayout:
 
@@ -45,9 +61,10 @@
             orientation: 'vertical'
 
             TextInput:
+                id: search_one
                 display_border: False
                 height: 64
-                font_size: 24
+                font_size: 18
                 font_name: 'Trebuchet MS'
                 multiline: False
                 background_normal: 'white.png'
@@ -58,10 +75,12 @@
                 orientation: 'horizontal'
                 Button:
                     text: "Check"
-                    on_release: root.on_click_check()
+                    on_release: root.on_click_check(1)
 
                 Button:
                     text: "Random"
+                    on_release: root.on_click_random(1)
+
 
 
     BoxLayout:
@@ -74,9 +93,10 @@
             orientation: 'vertical'
             AsyncImage:
 
+                id: wiki_image_two
                 keep_ratio: False
                 allow_stretch: True
-                source: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Arboretum.westonbirt.750pix.jpg'
+                source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/800px-Wikipedia_Logo_1.0.png'
 
         BoxLayout:
 
@@ -84,9 +104,10 @@
             orientation: 'vertical'
 
             TextInput:
+                id: search_two
                 display_border: False
                 height: 64
-                font_size: 24
+                font_size: 18
                 font_name: 'Trebuchet MS'
                 multiline: False
                 background_normal: 'white.png'
@@ -97,33 +118,39 @@
                 orientation: 'horizontal'
                 Button:
                     text: "Check"
-                    on_release: root.change_text()
+                    on_release: root.on_click_check(2)
 
                 Button:
                     text: "Random"
+                    on_release: root.on_click_random(2)
 
     BoxLayout:
         orientation: 'vertical'
         size_hint: 0.4, 0.55
-        pos_hint:{"x":0.0,"y":0.075}
+        pos_hint:{"x":0.05,"y":0.075}
 
         Label:
-            id: testtext
+            id: article_title_one
             text: "Article Title:"
         Label:
+            id: word_count_one
             text: "Word Count:"
         Label:
+            id: unique_words_one
             text: "Unique Words:"
         Label:
+            id: image_count_one
             text: "Image Count"
         Label:
+            id: link_count_one
             text: "Link Count:"
         Label:
+            id: section_count_one
             text: "Section Count:"
         Label:
             text: "Reference Count:"
-        Label:
-            text: "Supported Languages Count:"
+            id: reference_count_one
+
 
         # Most frequent words (2 graphs side by side)
         # Commonly Shared words
@@ -134,25 +161,29 @@
     BoxLayout:
         orientation: 'vertical'
         size_hint: 0.4, 0.55
-        pos_hint:{"x":0.5,"y":0.075}
+        pos_hint:{"x":0.55,"y":0.075}
 
         Label:
-            id: testtext
+            id: article_title_two
             text: "Article Title:"
         Label:
+            id: word_count_two
             text: "Word Count:"
         Label:
+            id: unique_words_two
             text: "Unique Words:"
         Label:
+            id: image_count_two
             text: "Image Count"
         Label:
+            id: link_count_two
             text: "Link Count:"
         Label:
+            id: section_count_two
             text: "Section Count:"
         Label:
             text: "Reference Count:"
-        Label:
-            text: "Supported Languages Count:"
+            id: reference_count_two
 
         # Most frequent words (2 graphs side by side)
         # Commonly Shared words
@@ -161,59 +192,22 @@
 
     BoxLayout:
         id: destination
-        size_hint: 0.35, 0.45
-        pos_hint:{"x":0.1,"y":0.15}
-
-    BoxLayout:
-        id: destination2
-        size_hint: 0.35, 0.45
-        pos_hint:{"x":0.55,"y":0.15}
-
-
-<MainLayout>:
-    cols: 2
-    spacing: 10
-    padding: 10
-
-    AsyncImage:
-        id: firstpic
-        source: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/180328_Sunmi_perfoming_at_Keimyung_University_%289%29_%28cropped%29.jpg'
-    AsyncImage:
-        source: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/180328_Sunmi_perfoming_at_Keimyung_University_%289%29_%28cropped%29.jpg'
-    TextInput:
-        text: "type here.."
-        multiline: False
-    TextInput:
-        text: "type here 2.."
-        multiline: False
+        size_hint: 0.85, 0.45
+        pos_hint:{"x":0.075,"y":0.175}
     Button:
-        text: "one"
+        id: red_bar
+        pos_hint:{"x":0.075,"y":0.075}
+        background_normal: 'red_bar.png'
+        background_down: 'red_bar.png'
+        size_hint: 0.85, 0.1
     Button:
-        text: "two"
-    Button:
-        text: "three"
-    Button:
-        text: "four"
-    Button:
-        text: "five"
-    Button:
-        text: "six"
-        id: sixbutton
-        on_release: root.change_text(self)
-    Button:
-        text: "seven"
-    Button:
-        text: "eight"
-    GridLayout:
-        cols: 2
-        spacing: 10
-        padding: 10
-
-        Button:
-            text: "two"
-        Button:
-            text: "three"
-
+        id: green_bar
+        pos_hint:{"x":0.075,"y":0.075}
+        background_normal: 'green_bar.png'
+        background_down: 'green_bar.png'
+        text: "% of shared words"
+        color: 0,0,0,1
+        size_hint: 0.425, 0.1
 
 
 
