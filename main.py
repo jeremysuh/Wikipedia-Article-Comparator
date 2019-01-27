@@ -123,9 +123,8 @@ class MainLayout(FloatLayout):
         links.text = "Link Count: " + str(self.count_links(wikiarticle))
         section.text = "Categories Count: " + str(self.count_section(wikiarticle))
         reference.text = "Reference Count: " + str(self.count_reference(wikiarticle))
-        word_count.text = "Word Count " + str(self.count_word(wikiarticle))
+        word_count.text = "Word Count: " + str(self.count_word(wikiarticle))
         self.analyze_words(wikiarticle, unique_words, num)
-
 
 
     def analyze_words(self, article, unique_words, num):
@@ -226,8 +225,6 @@ class MainLayout(FloatLayout):
          #   if len(wikiarticle.images) != 0:
               #  self.ids.wiki_image_two.source = wikiarticle.images[0]
 
-
-
         return len(wikiarticle.images)
 
     def count_links(self, wikiarticle):
@@ -241,8 +238,6 @@ class MainLayout(FloatLayout):
     def count_reference(self, wikiarticle):
 
         return len(wikiarticle.references)
-
-
 
 
     def on_click_arrow(self):
@@ -305,8 +300,6 @@ class MainLayout(FloatLayout):
                 similar_words+=1
 
         return float(similar_words)/(similar_words + (len(d1)-similar_words) + (len(d2)-similar_words))
-
-
 
 
     def change_text(self):
