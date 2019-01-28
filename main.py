@@ -98,7 +98,7 @@ class MainLayout(FloatLayout):
 
                 if self.first_input_confirm & self.second_input_confirm:
                     self.ids.compare_button.disabled = False
-                    self.ids.detect_one.background_normal = 'red_bar2.png'
+                    self.ids.detect_one.background_normal = 'green_bar2.png'
 
             except wikipedia.WikipediaException:
                 self.ids.compare_button.disabled = True
@@ -112,9 +112,10 @@ class MainLayout(FloatLayout):
                 self.article_two = self.ids.search_two.text
                 self.second_input_confirm = True
                 self.ids.detect_two.background_normal = 'green_bar2.png'
+
                 if self.first_input_confirm & self.second_input_confirm:
                     self.ids.compare_button.disabled = False
-                    self.ids.detect_two.background_normal = 'red_bar2.png'
+                    self.ids.detect_two.background_normal = 'green_bar2.png'
 
 
             except wikipedia.WikipediaException:
