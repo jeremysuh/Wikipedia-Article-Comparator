@@ -13,7 +13,7 @@
 
     Image:
         pos_hint:{"x":0,"y":0}
-        source: 'background.png'
+        source: 'background2.jpg'
         keep_ratio: False
         allow_stretch: True
 
@@ -35,7 +35,8 @@
         pos_hint:{"x":0.47,"y":0.75}
         size_hint: 0.06, 0.09
         disabled: True
-        text: "o"
+        text: ">"
+
 
 
 
@@ -54,6 +55,11 @@
                 keep_ratio: False
                 allow_stretch: True
                 source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/800px-Wikipedia_Logo_1.0.png'
+
+            Button:
+                size_hint: 1, 0.175
+                text: "Open page"
+                on_release: root.open_link(0)
 
         BoxLayout:
 
@@ -98,6 +104,12 @@
                 allow_stretch: True
                 source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Wikipedia_Logo_1.0.png/800px-Wikipedia_Logo_1.0.png'
 
+
+            Button:
+                size_hint: 1, 0.175
+                text: "Open page"
+                on_release: root.open_link(0)
+
         BoxLayout:
 
 
@@ -129,27 +141,48 @@
         size_hint: 0.4, 0.55
         pos_hint:{"x":0.05,"y":0.075}
 
-        Label:
+        Button:
             id: article_title_one
             text: "Article Title:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: word_count_one
             text: "Word Count:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: unique_words_one
             text: "Unique Words:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: image_count_one
             text: "Image Count"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: link_count_one
             text: "Link Count:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: section_count_one
             text: "Section Count:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             text: "Reference Count:"
             id: reference_count_one
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
 
 
         # Most frequent words (2 graphs side by side)
@@ -163,27 +196,48 @@
         size_hint: 0.4, 0.55
         pos_hint:{"x":0.55,"y":0.075}
 
-        Label:
+        Button:
             id: article_title_two
             text: "Article Title:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: word_count_two
             text: "Word Count:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: unique_words_two
             text: "Unique Words:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: image_count_two
             text: "Image Count"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: link_count_two
             text: "Link Count:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             id: section_count_two
             text: "Section Count:"
-        Label:
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
+        Button:
             text: "Reference Count:"
             id: reference_count_two
+            disabled: True
+            size_hint: 0.8, 1
+            pos_hint:{"x":0.1}
 
         # Most frequent words (2 graphs side by side)
         # Commonly Shared words

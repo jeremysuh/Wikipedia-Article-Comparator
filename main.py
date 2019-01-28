@@ -27,7 +27,6 @@ import matplotlib.pyplot as plt
 matplotlib.rcParams.update({'font.size': 8})
 
 
-
 class MainLayout(FloatLayout):
 
     current_page = 2;
@@ -161,7 +160,8 @@ class MainLayout(FloatLayout):
             frequentWord = ""
 
             for key in dictionary:
-                if dictionary[key] > largestCount:
+                if  dictionary[key] > largestCount and self.is_article(key) == False and key != "=" \
+                        and key != "=="and key != "===" and key != "-" and key != "--" and key != "_":
                     frequentWord = key
                     largestCount = dictionary[key]
 
@@ -217,15 +217,15 @@ class MainLayout(FloatLayout):
 
     def count_images(self, wikiarticle, num):
 
-    #    if num is 1:
-        #    if len(wikiarticle.images) != 0:
-             #   self.ids.wiki_image_one.source = wikiarticle.images[0]
-
-      #  else:
-         #   if len(wikiarticle.images) != 0:
-              #  self.ids.wiki_image_two.source = wikiarticle.images[0]
+        if num is 1:
+            if len(wikiarticle.images) != 0:
+                self.ids.wiki_image_one.source = wikiarticle.images[0]
+        else:
+            if len(wikiarticle.images) != 0:
+                self.ids.wiki_image_two.source = wikiarticle.images[0]
 
         return len(wikiarticle.images)
+
 
     def count_links(self, wikiarticle):
 
@@ -239,11 +239,18 @@ class MainLayout(FloatLayout):
 
         return len(wikiarticle.references)
 
-
     def on_click_arrow(self):
         self.hide_show_graphs()
         pass
 
+    def is_article(self, word):
+
+        return False
+        return word == "the" or word == "a" or word == "an"
+
+    def open_link(self, num):
+
+        pass
 
     def on_click_compare(self):
         print "compare"
